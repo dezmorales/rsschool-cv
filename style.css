@@ -1,0 +1,76 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 25px;
+    background-color: #222;
+    background-size: cover;
+    height: 100%;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.column{
+    max-width: 500px;
+}
+.avatar{
+    align-items: stretch;
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer-link{
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+.footer-img{
+    width: 250px;
+}
+.footer-hover:hover{
+    background: #bc6ff1;
+    transition: all .3s ease
+}
+.hover::before{
+    padding: 0px;
+    display: inline-block;
+    content: "<";
+    opacity: 0;
+    transition: all .3s ease
+}
+.hover::after{
+    padding: 0px;
+    display: inline-block;
+    content: ">";
+    opacity: 0;
+    transition: all .3s ease
+}
+.hover:hover::before{
+    padding: 10px;
+    opacity: 1;
+}
+.hover:hover::after{
+    padding: 10px;
+    opacity: 1;
+}
+.hover{
+    cursor: pointer;
+    transition: all .3s ease
+}
+.hover:hover{
+    color: #bc6ff1;
+}
+.link{
+    text-decoration: none;
+    color: #fff;
+}
